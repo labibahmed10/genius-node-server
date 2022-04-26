@@ -137,6 +137,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("It's working insha'Allah");
 });
+app.get("/heroku", (req, res) => {
+  res.send("It's working in the heroku");
+});
 
 app.listen(port, () => {
   console.log("It's running");
